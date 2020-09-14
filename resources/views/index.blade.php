@@ -1,6 +1,6 @@
 @extends('layout/main')
 
-@section('titile', 'Web Programing POLMED')
+@section('title', 'Web Programing POLMED')
 
 @section('container')
 <div class="container">
