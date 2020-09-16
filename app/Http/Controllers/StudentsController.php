@@ -56,7 +56,8 @@ class StudentsController extends Controller
         $request->validate([
         'nama' => 'required|max:255',
         'nrp' => 'required|numeric|digits:10|unique:Students,nrp',
-        'email' => 'required|email:rfc,dns|unique:Students,email',
+        'email' => 'required|email:rfc|unique:Students,email',
+        // 'email' => 'required|email:rfc,dns|unique:Students,email',
         'jurusan' => 'required'
         ]);
 
@@ -98,8 +99,8 @@ class StudentsController extends Controller
     {
         $request->validate([
         'nama' => 'required|max:255',
-        'nrp' => 'required|numeric|digits:10|unique:Students,nrp',
-        'email' => 'required|email:rfc,dns|unique:Students,email',
+        'nrp' => 'required|numeric|digits:10',
+        'email' => 'required|email:rfc|unique:Students,email',
         'jurusan' => 'required'
         ]);
 
